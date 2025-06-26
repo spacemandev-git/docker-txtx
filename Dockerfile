@@ -1,9 +1,5 @@
 FROM rust:bullseye
 
-COPY . ./prop-pool
-
-WORKDIR /prop-pool
-
 # Update and install dependencies
 RUN apt-get update && \
     apt-get install -y pkg-config libudev-dev libssl-dev git libclang-dev clang && \
